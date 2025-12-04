@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Palette</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <!-- NAVBAR -->
+        <nav class="navbar custom-navbar py-2">
+            <div class="container-fluid d-flex align-items-center justify-content-between">
+
+                <!-- logo -->
+                <a class="navbar-brand m-0" href="#">
+                    <img src="img/icons/logo.png" alt="Logo" class="navbar-logo">
+                </a>
+
+                <!-- links -->
+                <ul class="navbar-nav d-none d-lg-flex flex-row gap-4 mx-auto">
+                    <li class="nav-item"><a class="nav-link nav-text" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link nav-text" href="meals.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link nav-text" href="#">Comments</a></li>
+                    <li class="nav-item"><a class="nav-link nav-text" href="#">Contact Us</a></li>
+                </ul>
+
+                    <!-- icons -->
+                    <div class="d-flex align-items-center gap-3 navbar-icons">
+                        <a href="https://instagram.com" target="_blank">
+                            <img src="img/icons/ignav.png" class="nav-icon" alt="Instagram">
+                        </a>
+                        <a href="https://x.com" target="_blank">
+                            <img src="img/icons/xnav.png" class="nav-icon" alt="X">
+                        </a>
+                    </div>
+            </div>
+
+            <!-- mobile links -->
+            <ul class="navbar-nav d-flex d-lg-none flex-row justify-content-center gap-4 mt-2">
+                <li class="nav-item"><a class="nav-link nav-text" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link nav-text" href="meals.html">Menu</a></li>
+                <li class="nav-item"><a class="nav-link nav-text" href="#">Comments</a></li>
+                <li class="nav-item"><a class="nav-link nav-text" href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-layout container-fluid py-5">
+
+        <div class="sidebar-overlay d-lg-none"></div>
+
+        <button class="sidebar-toggle d-lg-none" type="button" aria-label="Toggle sidebar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="row">
+
+        <!-- SIDEBAR -->
+        <aside class="col-lg-3 mb-4 main-sidebar">
+            <div class="sidebar h-100 p-4">
+
+                <!-- Search bar -->
+                <div class="sidebar-search mb-4">
+                    <div class="input-group input-group-sm">
+                        <input type="text" class="form-control sidebar-search-input" placeholder="Search">
+                        <span class="input-group-text sidebar-search-icon">&#128269;</span>
+                    </div>
+                </div>
+
+                <!-- Meals section -->
+                <nav class="sidebar-nav">
+                    <div class="sidebar-section mb-4">
+                        <a href="meals.html" class="sidebar-title">MEALS</a>
+                        <ul class="list-unstyled sidebar-list mt-2">
+                            <li>↳ Vegetarian Meals</li>
+                            <li>↳ Vegan Meals</li>
+                            <li>↳ Our Desserts</li>
+                        </ul>
+                    </div>
+
+                    <!-- Reservations section -->
+                    <div class="sidebar-section">
+                        <a href="reservations.html" class="sidebar-title">RESERVATIONS</a>
+                        <ul class="list-unstyled sidebar-list mt-2">
+                            <li>↳ Make a Reservation</li>
+                            <li>↳ Cancel Reservation</li>
+                            <li>↳ Check My Reservation</li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <section class="col-lg-9">
+        <div class="info-section p-4">
+
+            <!-- H1 -->
+            <h1 class="info-title mb-4">Meals</h1>
+            <div class="row g-4">
+
+            <!-- CARD 1 -->
+            <div class="col-md-4">
+                <article class="reservation-card">
+                    <h2 class="reservation-card-title">Make a Reservation</h2>
+
+                    <p class="reservation-card-text">Book your table in a few simple steps and arrive knowing everything is ready for you.
+                    Choose the day, time and number of guests, and add any special notes such as food
+                    preferences, allergies or if you are celebrating something important. Our team reviews
+                    each reservation carefully to make sure your visit feels smooth and personal.
+                    Making a reservation in advance helps us prepare the right table, adjust lighting and
+                    music, and ensure your meals are served at the perfect time.
+                    </p>
+
+                    <div class="reservation-card-image-wrapper">
+                        <img src="img/reservations/place.png" alt="People booking a table" class="reservation-card-image">
+                    </div>
+
+                    <div class="reservation-card-button-wrapper">
+                        <a href="https://blank.page/" target="_blank">
+                            <button type="button" class="btn read-more-btn">Start Now</button>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="col-md-4">
+                <article class="reservation-card">
+                    <h2 class="reservation-card-title">Cancel a Reservation</h2>
+
+                    <p class="reservation-card-text">Plans can change, and we completely understand. Use this option to cancel your
+                    reservation quickly so we can reopen your table for other guests. You’ll receive a
+                    confirmation of the cancellation, and there’s no need to call unless you prefer to
+                    speak with us directly.
+                    Letting us know in advance helps our team plan the evening more efficiently and avoid
+                    unnecessary waiting times. It’s a small gesture that supports both the restaurant and
+                    other guests who may be hoping for a last-minute table.
+                    </p>
+
+                    <div class="reservation-card-image-wrapper">
+                        <img src="img/reservations/place.png" alt="Person cancelling a reservation on a phone" class="reservation-card-image">
+                    </div>
+
+                    <div class="reservation-card-button-wrapper">
+                        <a href="https://blank.page/" target="_blank">
+                            <button type="button" class="btn read-more-btn">Start Now</button>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="col-md-4">
+                <article class="reservation-card">
+                    <h2 class="reservation-card-title">Check My Reservation</h2>
+
+                    <p class="reservation-card-text">Not sure about your time, date or number of guests? Use this option to review the
+                    details of your reservation at any moment. You’ll be able to confirm your booking,
+                    see any special notes you added and feel confident before arriving.
+                    Checking your reservation is also useful if you’re coordinating with friends or family.
+                    You can share the information easily and avoid confusion about when and where to meet.
+                    A quick review now can save stress later and helps us welcome you right on time.
+                    </p>
+
+                    <div class="reservation-card-image-wrapper">
+                        <img src="img/reservations/place.png" alt="Customer checking reservation details" class="reservation-card-image">
+                    </div>
+
+                    <div class="reservation-card-button-wrapper">
+                        <a href="https://blank.page/" target="_blank">
+                            <button type="button" class="btn read-more-btn">Start Now</button>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer mt-5">
+        <div class="container footer-container py-5">
+
+            <!-- Logo + name-->
+            <div class="row justify-content-center text-center mb-4">
+                <div class="col-12">
+                    <img src="img/icons/bglogo.png" alt="Plant Palette logo" class="footer-logo">
+                    <p class="footer-brand-name mt-2">Plant Palette</p>
+                </div>
+            </div>
+
+            <!-- Info + Quick Links -->
+            <div class="row footer-info-row mb-4">
+                <!-- Contact -->
+                <div class="col-md-6 text-md-start text-center footer-contact mb-4 mb-md-0">
+                    <p>📍 123 Main Street, Ottawa</p>
+                    <p>📞 (123) 456-7890</p>
+                    <p>✉ info@restaurant.com</p>
+                    <p>Mon – Sun: 8am – 11pm</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-6 text-md-start text-center footer-links">
+                    <h3 class="footer-links-title">Quick Links</h3>
+                    <ul class="list-unstyled mt-2">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">RESERVATIONS</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#">MENU</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">COMMENTS</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Social Media Icons -->
+            <div class="row justify-content-center mb-4">
+                <div class="col-12 text-center">
+                    <div class="footer-social d-flex justify-content-center align-items-center gap-3">
+                        <!-- Instagram -->
+                        <a href="https://instagram.com" target="_blank">
+                            <img src="img/icons/igfooter.png" alt="Instagram" class="footer-icon">
+                        </a>
+                        <!-- X -->
+                        <a href="https://x.com" target="_blank">
+                            <img src="img/icons/xfooter.png" alt="X" class="footer-icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Newsletter Buttons -->
+            <div class="row justify-content-center mb-3">
+                <div class="col-md-8">
+                    <button type="button" class="btn footer-outline-btn w-100 mb-3">Sign up for our Newsletter</button>
+                    <button type="button" class="btn footer-filled-btn w-100">Subscribe</button>
+                </div>
+            </div>
+
+            <!-- Final -->
+            <div class="row">
+                <div class="col-12 text-center footer-bottom">
+                    <a href="#" class="footer-bottom-link">Privacy Policy</a>
+                    <span class="footer-bottom-separator">|</span>
+                    <a href="#" class="footer-bottom-link">Terms of Service</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- SCROLLREVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script>
+    const sidebarToggle = document.querySelector('.sidebar-toggle');
+    const mainSidebar   = document.querySelector('.main-sidebar');
+    const sidebarOverlay = document.querySelector('.sidebar-overlay');
+    
+    if (sidebarToggle && mainSidebar && sidebarOverlay) {
+        sidebarToggle.addEventListener('click', () => {
+            mainSidebar.classList.toggle('sidebar-open');
+            sidebarOverlay.classList.toggle('overlay-active');});
+            
+            sidebarOverlay.addEventListener('click', () => {
+                mainSidebar.classList.remove('sidebar-open');
+                sidebarOverlay.classList.remove('overlay-active');});}
+    </script>
+
+</body>
+</html>

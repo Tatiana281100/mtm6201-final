@@ -6,6 +6,7 @@
     --soft-gray: #C3C6BD;
     --off-white: #EFF0E6;
     --earth-brown: #A46435;
+    --soft-orange: #EDA36E;
 }
 
 /* Panton Regular */
@@ -539,12 +540,12 @@ a {
         column-gap: 12px;
         align-items: stretch;
         padding: 16px;
-  }
+    }
 
     .meal-card-title, .meal-card-text, .meal-card-button-wrapper {
         grid-column: 1;
         text-align: left;
-  }
+    }
 
     .meal-card-image-wrapper {
         grid-column: 2;
@@ -554,28 +555,133 @@ a {
         height: 100%;
         border-radius: 16px;
         overflow: hidden;
-  }
+    }
 
     .meal-card-image {
         width: 100%;
         height: 100%;
         object-fit: cover;
-  }
+    }
 
     .meal-card-button-wrapper {
         margin-top: 0.5rem;
-  }
+    }
 }
 
 /* BUTTONS */
 .meal-card .read-more-btn {
-    border: 2px solid #eda36e;
-    color: #eda36e;
+    border: 2px solid var(--soft-orange);
+    color: var(--soft-orange);
 }
 
 /* Hover state */
 .meal-card .read-more-btn:hover {
-    background-color: #eda36e;
-    color: var(--off-white);              /* cremita */
-    border-color: #eda36e;
+    background-color: var(--soft-orange);
+    color: var(--off-white);
+    border-color: var(--soft-orange);
+}
+
+
+
+
+/* RESERVATIONS PAGE */
+.reservation-card {
+    background-color: var(--earth-brown);
+    border-radius: 16px;
+    padding: 18px 16px 18px;
+    color: var(--off-white);
+    display: flex;
+    flex-direction: column;
+}
+
+/* H2 */
+.reservation-card-title {
+    font-family: 'Recoleta', serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+    color: var(--off-white);
+}
+
+/* paragraph */
+.reservation-card-text {
+    font-family: 'Recoleta', serif;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: var(--off-white);
+    margin-bottom: 1rem;
+}
+
+/* img */
+.reservation-card-image-wrapper {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 0.8rem;
+}
+
+.reservation-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Desktop Button */
+.reservation-card-button-wrapper {
+    margin-top: auto;
+    text-align: center;
+}
+
+/* Start Now */
+.reservation-card .read-more-btn {
+    border: 2px solid var(--lime-green);
+    color: var(--lime-green);
+    background-color: transparent;
+    transition: all 0.2s ease;
+}
+
+/* Hover */
+.reservation-card .read-more-btn:hover {
+    background-color: var(--soft-green);
+    color: var(--off-white);
+    border-color: var(--soft-green);
+}
+
+/* MOBILE LAYOUT */
+@media (max-width: 768px) {
+    .reservation-card {
+        display: grid;
+        grid-template-columns: 1.3fr 1fr;
+        column-gap: 12px;
+        align-items: stretch;
+        padding: 16px;
+    }
+
+    .reservation-card-title, .reservation-card-text, .reservation-card-button-wrapper {
+        grid-column: 1;
+        text-align: left;
+    }
+
+    .reservation-card-image-wrapper {
+        grid-column: 2;
+        grid-row: 1 / span 3;
+        margin-bottom: 0;
+        aspect-ratio: auto;
+        height: 100%;
+        border-radius: 16px;
+        overflow: hidden;
+    }
+
+    .reservation-card-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .reservation-card-button-wrapper {
+        margin-top: 0.5rem;
+        text-align: left;
+    }
 }
