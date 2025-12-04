@@ -1,0 +1,484 @@
+:root {
+    --dark-green: #1F2C1F;
+    --medium-green: #3D4B3D;
+    --soft-green: #798769;
+    --lime-green: #7D9331;
+    --soft-gray: #C3C6BD;
+    --off-white: #EFF0E6;
+    --earth-brown: #A46435;
+}
+
+/* Panton Regular */
+@font-face {
+    font-family: 'PantonNarrow';
+    src: url('../fonts/Panton-Trial-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+/* Panton Narrow ExtraBold */
+@font-face {
+    font-family: 'PantonNarrow';
+    src: url('../fonts/PantonNarrow-Trial-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+}
+
+/* Recoleta */
+@font-face {
+    font-family: 'Recoleta';
+    src: url('../fonts/Recoleta-RegularDEMO.otf') format('opentype');
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f8f4;
+    font-family: 'PantonNarrow', sans-serif;
+    font-weight: 400;
+    color: var(--dark-green);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* NAVBAR */
+.custom-navbar {
+    background-color: var(--soft-gray);
+    padding: 10px 20px;
+}
+
+/* Logo on the left */
+.navbar-logo {
+    width: 55px;
+    height: auto;
+}
+
+/* Icons on the right */
+.nav-icon {
+    width: 30px;
+    height: auto;
+    margin-left: 15px;
+}
+
+/* Center menu links */
+.nav-text {
+    font-family: 'PantonNarrow', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--dark-green);
+    margin: 0 15px;
+    letter-spacing: 1px;
+}
+
+.nav-text:hover {
+    color: var(--lime-green);
+}
+
+/* Navbar toggler */
+.navbar-toggler {
+    border-color: var(--dark-green);
+}
+
+.navbar-toggler-icon {
+    filter: brightness(0) saturate(100%);
+}
+
+.navbar-toggler {
+    display: none;
+}
+
+/* MAIN LAYOUT */
+.main-layout {
+    max-width: 1200px;
+}
+
+/* SIDEBAR  */
+.sidebar {
+    background-color: var(--off-white);
+    border-radius: 8px;
+    padding: 20px;
+    font-family: 'PantonNarrow', sans-serif;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12),
+                0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+/* Search bar */
+.sidebar-search-input {
+    border-radius: 20px 0 0 20px;
+    border: 1px solid var(--soft-gray);
+    font-size: 0.85rem;
+}
+
+.sidebar-search-icon {
+    border-radius: 0 20px 20px 0;
+    background-color: var(--soft-gray);
+    border: 1px solid var(--soft-gray);
+    font-size: 0.85rem;
+}
+
+/* Titles MEALS - RESERVATIONS */
+.sidebar-title {
+    display: inline-block;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--dark-green);
+    margin-bottom: 0.25rem;
+}
+
+/* Subitems */
+.sidebar-list li {
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: var(--medium-green);
+    margin-bottom: 0.2rem;
+}
+
+/* INFO SECTION */
+.info-section {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 32px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12),
+                0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+/* H1 Our Information */
+.info-title {
+    font-family: 'PantonNarrow', sans-serif;
+    font-weight: 800;
+    color: var(--dark-green);
+    font-size: 2rem;
+}
+
+/* INFO CARDS — DESKTOP */
+.info-card {
+    background-color: var(--soft-green);
+    border-radius: 16px;
+    padding: 20px 18px 18px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+
+/* H2 inside cards */
+.info-card-title {
+    font-family: 'Recoleta', serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+}
+
+/* Paragraphs inside cards */
+.info-card-text {
+    font-family: 'Recoleta', serif;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+/* Images */
+.info-card-image-wrapper {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-top: 1rem;
+}
+
+.info-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Button wrapper – under the image in desktop */
+.info-card-button-wrapper {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* Read More button */
+.read-more-btn {
+    font-family: 'PantonNarrow', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 999px;
+    border: 2px solid var(--off-white);
+    padding: 6px 22px;
+    background-color: transparent;
+    color: var(--off-white);
+}
+
+.read-more-btn:hover {
+    background-color: var(--off-white);
+    color: var(--dark-green);
+}
+
+/* RESPONSIVE TWEAKS */
+@media (max-width: 991.98px) {
+    .info-section {
+        margin-top: 1rem;
+    }
+}
+
+/* FOOTER */
+.site-footer {
+    background-color: var(--medium-green);
+    color: var(--off-white);
+    margin-top: 3rem;
+}
+
+.footer-container {
+    max-width: 1100px;
+}
+
+/* Logo */
+.footer-logo {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Plant Palette */
+.footer-brand-name {
+    font-family: 'PantonNarrow', sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+/* Info + Quick Links */
+.footer-info-row {
+    margin-top: 1.5rem;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Left column */
+.footer-contact p {
+    font-family: 'Recoleta', serif;
+    margin-bottom: 0.3rem;
+}
+
+/* Right Column */
+.footer-links-title {
+    font-family: 'PantonNarrow', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+/* Line + alignment */
+@media (min-width: 768px) {
+    .footer-contact {
+        text-align: right !important;
+        padding-right: 2rem;
+    }
+
+    .footer-links {
+        border-left: 1px solid rgba(239, 240, 230, 0.5);
+        padding-left: 2rem;
+    }
+}
+
+.footer-links ul li {
+    font-family: 'Recoleta', serif;
+    font-size: 0.9rem;
+    margin-bottom: 0.15rem;
+    letter-spacing: 0.5px;
+}
+
+.footer-links ul li a {
+    color: var(--off-white);
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    color: var(--lime-green);
+}
+
+/* Social Media */
+.footer-icon {
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+}
+
+/* Newsletter Buttons */
+.footer-outline-btn {
+    font-family: 'PantonNarrow', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    border-radius: 999px;
+    border: 2px solid var(--off-white);
+    background-color: transparent;
+    color: var(--off-white);
+    text-transform: none;
+}
+
+.footer-outline-btn:hover {
+    background-color: var(--off-white);
+    color: var(--dark-green);
+}
+
+.footer-filled-btn {
+    font-family: 'PantonNarrow', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    border-radius: 999px;
+    border: 2px solid var(--off-white);
+    background-color: var(--off-white);
+    color: var(--dark-green);
+    text-transform: none;
+}
+
+.footer-filled-btn:hover {
+    background-color: var(--soft-green);
+    color: var(--off-white);
+    border-color: var(--soft-green);
+}
+
+/* Privacy - Terms */
+.footer-bottom {
+    border-top: 1px solid rgba(239, 240, 230, 0.4);
+    padding-top: 0.8rem;
+    font-size: 0.8rem;
+}
+
+.footer-bottom-link {
+    color: var(--off-white);
+    text-decoration: none;
+    font-family: 'PantonNarrow', sans-serif;
+    font-weight: 400;
+}
+
+.footer-bottom-link:hover {
+    color: var(--lime-green);
+}
+
+.footer-bottom-separator {
+    margin: 0 0.5rem;
+}
+
+/* MOBILE SIDEBAR TOGGLE BUTTON  */
+.sidebar-toggle {
+    background-color: var(--dark-green);
+    border: none;
+    border-radius: 12px;
+    padding: 8px 10px;
+    margin-bottom: 1rem;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+}
+
+/* 3 lines */
+.sidebar-toggle span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: var(--off-white);
+    border-radius: 999px;
+}
+
+@media (min-width: 992px) {
+    .sidebar-toggle {
+        display: none;
+    }
+}
+
+/* SIDEBAR MOBILE BEHAVIOR */
+@media (max-width: 991.98px) {
+    .main-layout {
+        position: relative;
+    }
+
+    .main-sidebar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80%;
+        max-width: 300px;
+        z-index: 20;
+        display: none;
+    }
+
+    .main-sidebar.sidebar-open {
+        display: block;
+    }
+}
+
+/* Overlay */
+.sidebar-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.15);
+    display: none;
+    z-index: 10;
+}
+
+.sidebar-overlay.overlay-active {
+    display: block;
+}
+
+/* MOBILE CARD LAYOUT */
+@media (max-width: 768px) {
+
+    .info-card {
+        display: grid;
+        grid-template-columns: 1.3fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "text image"
+            "button image";
+        column-gap: 12px;
+        align-items: stretch;
+        padding: 16px;
+    }
+
+    .info-card-title,
+    .info-card-text {
+        grid-area: text;
+        text-align: left;
+    }
+
+    .info-card-image-wrapper {
+        grid-area: image;
+        margin-top: 0;
+        aspect-ratio: auto;
+        height: 100%;
+        border-radius: 16px;
+        overflow: hidden;
+    }
+
+    .info-card-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .info-card-button-wrapper {
+        grid-area: button;
+        text-align: left;
+        margin-top: 0.5rem;
+    }
+
+    .read-more-btn {
+        margin-top: 0.25rem;
+        display: inline-block;
+    }
+}
