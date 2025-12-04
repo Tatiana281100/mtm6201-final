@@ -441,23 +441,21 @@ a {
     .info-card {
         display: grid;
         grid-template-columns: 1.3fr 1fr;
-        grid-template-rows: auto auto;
-        grid-template-areas:
-            "text image"
-            "button image";
         column-gap: 12px;
         align-items: stretch;
         padding: 16px;
     }
 
     .info-card-title,
-    .info-card-text {
-        grid-area: text;
+    .info-card-text,
+    .info-card-button-wrapper {
+        grid-column: 1;
         text-align: left;
     }
 
     .info-card-image-wrapper {
-        grid-area: image;
+        grid-column: 2;
+        grid-row: 1 / span 3;
         margin-top: 0;
         aspect-ratio: auto;
         height: 100%;
@@ -471,14 +469,113 @@ a {
         object-fit: cover;
     }
 
-    .info-card-button-wrapper {
-        grid-area: button;
-        text-align: left;
-        margin-top: 0.5rem;
-    }
-
     .read-more-btn {
-        margin-top: 0.25rem;
+        margin-top: 0.5rem;
         display: inline-block;
     }
+}
+
+
+
+
+/* MEALS PAGE CARDS */
+
+/* Desktop base */
+.meal-card {
+    background-color: var(--dark-green);
+    border-radius: 16px;
+    padding: 18px 16px 18px;
+    color: var(--off-white);
+    display: flex;
+    flex-direction: column;
+}
+
+/* H2 */
+.meal-card-title {
+    font-family: 'Recoleta', serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+    color: var(--off-white);
+}
+
+/* img */
+.meal-card-image-wrapper {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 0.8rem;
+}
+
+.meal-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* paragraph */
+.meal-card-text {
+    font-family: 'Recoleta', serif;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: var(--off-white);
+    margin-bottom: 1rem;
+}
+
+.meal-card-button-wrapper {
+    margin-top: auto;
+    text-align: center;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+
+  /* grid card */
+    .meal-card {
+        display: grid;
+        grid-template-columns: 1.3fr 1fr;
+        column-gap: 12px;
+        align-items: stretch;
+        padding: 16px;
+  }
+
+    .meal-card-title, .meal-card-text, .meal-card-button-wrapper {
+        grid-column: 1;
+        text-align: left;
+  }
+
+    .meal-card-image-wrapper {
+        grid-column: 2;
+        grid-row: 1 / span 3;
+        margin-bottom: 0;
+        aspect-ratio: auto;
+        height: 100%;
+        border-radius: 16px;
+        overflow: hidden;
+  }
+
+    .meal-card-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+  }
+
+    .meal-card-button-wrapper {
+        margin-top: 0.5rem;
+  }
+}
+
+/* BUTTONS */
+.meal-card .read-more-btn {
+    border: 2px solid #eda36e;
+    color: #eda36e;
+}
+
+/* Hover state */
+.meal-card .read-more-btn:hover {
+    background-color: #eda36e;
+    color: var(--off-white);              /* cremita */
+    border-color: #eda36e;
 }
