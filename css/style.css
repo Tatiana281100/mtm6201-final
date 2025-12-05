@@ -1,3 +1,4 @@
+/* color palette */
 :root {
     --dark-green: #1F2C1F;
     --medium-green: #3D4B3D;
@@ -9,21 +10,21 @@
     --soft-orange: #EDA36E;
 }
 
-/* Panton Regular */
+/* panton regular */
 @font-face {
     font-family: 'PantonNarrow';
     src: url('../fonts/Panton-Trial-Regular.ttf') format('truetype');
     font-weight: 400;
 }
 
-/* Panton Narrow ExtraBold */
+/* panton narrow extrabold */
 @font-face {
     font-family: 'PantonNarrow';
     src: url('../fonts/PantonNarrow-Trial-ExtraBold.ttf') format('truetype');
     font-weight: 800;
 }
 
-/* Recoleta */
+/* recoleta */
 @font-face {
     font-family: 'Recoleta';
     src: url('../fonts/Recoleta-RegularDEMO.otf') format('opentype');
@@ -48,26 +49,26 @@ a {
     color: inherit;
 }
 
-/* NAVBAR */
+/* navbar */
 .custom-navbar {
     background-color: var(--soft-gray);
     padding: 10px 20px;
 }
 
-/* Logo on the left */
+/* logo on the left */
 .navbar-logo {
     width: 55px;
     height: auto;
 }
 
-/* Icons on the right */
+/* icons on the right */
 .nav-icon {
     width: 30px;
     height: auto;
     margin-left: 15px;
 }
 
-/* Center menu links */
+/* center menu links */
 .nav-text {
     font-family: 'PantonNarrow', sans-serif;
     font-weight: 400;
@@ -81,7 +82,7 @@ a {
     color: var(--lime-green);
 }
 
-/* Navbar toggler */
+/* navbar toggler */
 .navbar-toggler {
     border-color: var(--dark-green);
 }
@@ -94,12 +95,12 @@ a {
     display: none;
 }
 
-/* MAIN LAYOUT */
+/* main layout */
 .main-layout {
     max-width: 1200px;
 }
 
-/* SIDEBAR  */
+/* sidebar  */
 .sidebar {
     background-color: var(--off-white);
     border-radius: 8px;
@@ -109,7 +110,7 @@ a {
                 0 4px 12px rgba(0, 0, 0, 0.10);
 }
 
-/* Search bar */
+/* search bar */
 .sidebar-search-input {
     border-radius: 20px 0 0 20px;
     border: 1px solid var(--soft-gray);
@@ -123,7 +124,7 @@ a {
     font-size: 0.85rem;
 }
 
-/* Titles MEALS - RESERVATIONS */
+/* meals and reservations */
 .sidebar-title {
     display: inline-block;
     font-weight: 800;
@@ -132,7 +133,7 @@ a {
     margin-bottom: 0.25rem;
 }
 
-/* Subitems */
+/* subitems */
 .sidebar-list li {
     font-weight: 400;
     font-size: 0.9rem;
@@ -149,7 +150,7 @@ a {
                 0 4px 12px rgba(0, 0, 0, 0.10);
 }
 
-/* H1 Our Information */
+/* H1 */
 .info-title {
     font-family: 'PantonNarrow', sans-serif;
     font-weight: 800;
@@ -157,7 +158,7 @@ a {
     font-size: 2rem;
 }
 
-/* INFO CARDS — DESKTOP */
+/* info cards desktop */
 .info-card {
     background-color: var(--soft-green);
     border-radius: 16px;
@@ -167,7 +168,7 @@ a {
     flex-direction: column;
 }
 
-/* H2 inside cards */
+/* H2 */
 .info-card-title {
     font-family: 'Recoleta', serif;
     font-weight: 700;
@@ -175,7 +176,7 @@ a {
     margin-bottom: 0.6rem;
 }
 
-/* Paragraphs inside cards */
+/* paragraph */
 .info-card-text {
     font-family: 'Recoleta', serif;
     font-size: 0.9rem;
@@ -183,7 +184,7 @@ a {
     margin-bottom: 1rem;
 }
 
-/* Images */
+/* images */
 .info-card-image-wrapper {
     width: 100%;
     aspect-ratio: 1 / 1;
@@ -199,13 +200,13 @@ a {
     display: block;
 }
 
-/* Button wrapper – under the image in desktop */
+/* button wrapper */
 .info-card-button-wrapper {
     margin-top: 1rem;
     text-align: center;
 }
 
-/* Read More button */
+/* read more button */
 .read-more-btn {
     font-family: 'PantonNarrow', sans-serif;
     font-weight: 400;
@@ -224,7 +225,7 @@ a {
     color: var(--dark-green);
 }
 
-/* RESPONSIVE TWEAKS */
+/* responsive */
 @media (max-width: 991.98px) {
     .info-section {
         margin-top: 1rem;
@@ -242,7 +243,7 @@ a {
     max-width: 1100px;
 }
 
-/* Logo */
+/* logo */
 .footer-logo {
     width: 90px;
     height: 90px;
@@ -250,14 +251,14 @@ a {
     border-radius: 50%;
 }
 
-/* Plant Palette */
+/* plant palette */
 .footer-brand-name {
     font-family: 'PantonNarrow', sans-serif;
     font-weight: 800;
     font-size: 1.2rem;
 }
 
-/* Info + Quick Links */
+/* info and quick links */
 .footer-info-row {
     margin-top: 1.5rem;
     max-width: 650px;
@@ -265,13 +266,13 @@ a {
     margin-right: auto;
 }
 
-/* Left column */
+/* left column */
 .footer-contact p {
     font-family: 'Recoleta', serif;
     margin-bottom: 0.3rem;
 }
 
-/* Right Column */
+/* right column */
 .footer-links-title {
     font-family: 'PantonNarrow', sans-serif;
     font-weight: 400;
@@ -279,7 +280,7 @@ a {
     font-size: 1rem;
 }
 
-/* Line + alignment */
+/* line and alignment */
 @media (min-width: 768px) {
     .footer-contact {
         text-align: right !important;
@@ -308,14 +309,14 @@ a {
     color: var(--lime-green);
 }
 
-/* Social Media */
+/* social media */
 .footer-icon {
     width: 34px;
     height: 34px;
     object-fit: contain;
 }
 
-/* Newsletter Buttons */
+/* newsletter buttons */
 .footer-outline-btn {
     font-family: 'PantonNarrow', sans-serif;
     font-weight: 400;
@@ -349,7 +350,7 @@ a {
     border-color: var(--soft-green);
 }
 
-/* Privacy - Terms */
+/* privacy and Terms */
 .footer-bottom {
     border-top: 1px solid rgba(239, 240, 230, 0.4);
     padding-top: 0.8rem;
@@ -371,7 +372,7 @@ a {
     margin: 0 0.5rem;
 }
 
-/* MOBILE SIDEBAR TOGGLE BUTTON  */
+/* mobile sidebar button  */
 .sidebar-toggle {
     background-color: var(--dark-green);
     border: none;
@@ -399,7 +400,7 @@ a {
     }
 }
 
-/* SIDEBAR MOBILE BEHAVIOR */
+/* sidebar mobile */
 @media (max-width: 991.98px) {
     .main-layout {
         position: relative;
@@ -420,7 +421,7 @@ a {
     }
 }
 
-/* Overlay */
+/* overlay */
 .sidebar-overlay {
     position: absolute;
     top: 0;
@@ -436,7 +437,7 @@ a {
     display: block;
 }
 
-/* MOBILE CARD LAYOUT */
+/* mobile layout */
 @media (max-width: 768px) {
 
     .info-card {
@@ -479,9 +480,8 @@ a {
 
 
 
-/* MEALS PAGE CARDS */
-
-/* Desktop base */
+/* MEALS PAGE */
+/* desktop base */
 .meal-card {
     background-color: var(--dark-green);
     border-radius: 16px;
@@ -530,7 +530,7 @@ a {
     text-align: center;
 }
 
-/* Mobile layout */
+/* mobile layout */
 @media (max-width: 768px) {
 
   /* grid card */
@@ -568,13 +568,13 @@ a {
     }
 }
 
-/* BUTTONS */
+/* buttons */
 .meal-card .read-more-btn {
     border: 2px solid var(--soft-orange);
     color: var(--soft-orange);
 }
 
-/* Hover state */
+/* hover state */
 .meal-card .read-more-btn:hover {
     background-color: var(--soft-orange);
     color: var(--off-white);
@@ -628,28 +628,28 @@ a {
     display: block;
 }
 
-/* Desktop Button */
+/* desktop Button */
 .reservation-card-button-wrapper {
     margin-top: auto;
     text-align: center;
 }
 
-/* Start Now */
+/* start Now */
 .reservation-card .read-more-btn {
-    border: 2px solid var(--lime-green);
-    color: var(--lime-green);
+    border: 2px solid var(--soft-gray);
+    color: var(--soft-gray);
     background-color: transparent;
     transition: all 0.2s ease;
 }
 
-/* Hover */
+/* hover */
 .reservation-card .read-more-btn:hover {
-    background-color: var(--soft-green);
-    color: var(--off-white);
-    border-color: var(--soft-green);
+    background-color: var(--soft-gray);
+    color: var(--earth-brown);
+    border-color: var(--soft-gray);
 }
 
-/* MOBILE LAYOUT */
+/* mobile layout */
 @media (max-width: 768px) {
     .reservation-card {
         display: grid;
